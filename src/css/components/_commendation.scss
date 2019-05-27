@@ -1,0 +1,121 @@
+.commendations{
+    margin: -4.2rem 0 5.8rem; 
+}
+
+.commendation{
+    padding: 9.2rem 6.2rem 3.5rem;
+    height: 100%;
+    position: relative;
+
+    @include respondmax(lg){
+        padding: 6rem 3.5rem 3rem;
+    }
+
+
+    &__circle{
+        position: absolute;
+        background-color: $color_gray-bg;
+        border: 5px solid $color_white;
+        border-radius: 100%;
+        z-index: 10;
+
+        &--big{
+            width: 13.5rem;
+            height: 13.5rem;
+            top: -8.7rem;
+
+            @include respondmax(lg){
+                width: 9rem;
+                height: 9rem;
+                top: -5rem;
+            }
+
+            &-2{
+                right: 4.5rem;
+            }
+        }
+        &--small{
+            width: 4.5rem;
+            height: 4.5rem;
+            top: -2.4rem;
+
+            @include respondmax(lg){
+                width: 3rem;
+                height: 3rem;
+                top: -2rem;
+            }            
+
+            &-1{
+                left: 22.3rem;
+
+            @include respondmax(lg){
+                left: 15rem;
+            }
+                &_1{
+                    left: 29.3rem;
+
+            @include respondmax(lg){
+                left: 20.5rem;
+            }
+                }
+            }
+            &-2{
+                right: 21rem; 
+                
+            @include respondmax(lg){
+                right: 17rem;
+            }                
+                &_2{
+                    right: 27.6rem;
+            @include respondmax(lg){
+                right: 22.5rem;
+            }
+                }
+            }
+        }
+    }
+
+    &--1{
+        background-color: $color_primary;
+        color: $color_white;
+    }
+    &--2{
+        background-color: $color_gray-bg;
+        color: $color_black;
+    }
+
+    &__paragraph{
+        margin-bottom: 2.8rem;
+        min-height: 9.5rem;
+        text-align: justify;
+        @include font($drp, 1.6rem, $lh: 1.9rem);
+
+        @include respondmax(lg){
+            margin-bottom: 2rem;
+        }
+
+        @include respondmin(phone-land){
+            min-height: 14.2rem;
+        }
+
+        @include respondmin(ipad-pro){
+            min-height: 21rem;
+        }     
+
+        @include respondmin(responsiveMax){
+            min-height: 11.4rem;
+        }
+    }
+
+    &__author{
+        &--main{
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+            @include font($drpb, 1.8rem);
+        }
+        &--sub{
+            letter-spacing: 1px;
+            @include font($drp, 1.4rem);
+        }
+    }
+}

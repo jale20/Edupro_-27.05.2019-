@@ -1,0 +1,115 @@
+.header{
+    padding: 1rem;
+
+    @include respondmax(lg){
+        padding: 1rem 2rem;
+    }
+
+    &__right{
+        @include respondmax(lg){
+            width: 80%;
+            text-align: right;
+            margin-right: 1rem;
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        img{
+            @include respondmax(lg){
+                max-height: 65px;
+            }            
+        }
+    }
+    &__nav{
+        display: inline-block;
+        @include respondmax(lg){
+            position: absolute;
+            width: 100%;
+            height: calc(100vh-50px);
+            top: 95px;
+            left: -100%;
+            transition: .5s;
+            background-color: $color_white;
+            z-index: 10;
+        }
+
+        &.active{
+            @include respondmax(lg){
+                left: 0;
+            }
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+
+        @include respondmax(lg){
+            display: block;
+            text-align: center
+        }
+
+        &_text{
+            padding: 1.5rem 1.4rem;
+            display: block;
+            text-transform: uppercase;
+            @include font($drpbold, 1.4rem, $color_text, $w:600);
+            transition: all .3s linear;
+
+            @include respondmax(lg){
+                border-bottom: 1px solid rgba(0,0,0,.2);
+            }
+            @include respondmin(xl){
+
+            &:active,
+            &:hover{
+                color: $color_primary!important;
+            }
+        }
+        }
+        
+        &-item.active &_text{
+            color: $color_primary!important;
+        }
+    }
+
+    &__register{
+        padding: 1rem 4.5rem;
+        text-transform: uppercase;
+        background-color: $color_primary;
+        border-radius: 2rem;
+        vertical-align: initial;
+        @include font($drpb, 1.4rem, $color_white, $w:700);
+        transition: all .3s linear;
+        @include respondmin(xl){
+
+        &:hover{
+            color: $color_white;
+        }
+    }
+        @include respondmax(lg){
+            font-size: 1rem;
+            padding: 1rem 2.2rem;
+        }
+    }
+}
+
+
+.menu-toggle{
+    color: $color_black!important;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+
+    @include respondmax(lg){
+        display: block;
+    }
+}

@@ -1,0 +1,182 @@
+.u-padding-smallest{
+    padding: 1.8rem!important;
+
+    @include respondmin(phone-land){
+        padding: 1.5rem!important;
+    }
+
+    @include respondmax(md){
+        padding: 3rem!important;
+    }
+}
+
+.u-padding-top-big{
+    padding-top: 7rem!important;
+
+    @include respondmax(md){
+        padding-top: 3rem!important;
+    }
+    @include respondmin(ipad){
+        padding-top: 3rem!important;
+    }
+    @include respondmin(ipad-pro){
+        padding-top: 2rem!important;
+    }
+
+}
+
+.u-padding-left-small{
+    padding-left: 3.3rem!important;
+}
+
+.u-padding-right-small{
+    padding-right: 3.3rem!important;
+}
+
+.u-padding-top-small{
+    padding-top: 3.3rem!important;
+}
+
+.u-padding-top-less{
+    padding-top: 4rem!important;
+}
+
+.u-padding-top-medium{
+    padding-top: 5.3rem!important;
+
+    @include respondmax(lg){
+        padding-top: 3.3rem!important;
+    }
+
+    @include respondmin(phone-land){
+        padding-top: 2rem!important;
+    }
+
+    @include respondmin(responsiveMax){
+        padding-top: 2.7rem!important;
+    }
+}
+
+
+.u-padding-left-medium{
+    padding-left: 6rem!important;
+
+    @include respondmax(lg){
+        padding-left: 3rem!important;
+    }
+
+    @include respondmin(phone-land){
+        padding-left: 1rem!important;
+    }
+    @include respondmin(responsiveMax){
+        padding-left: 2.7rem!important;
+    }
+}
+
+.u-padding-right-medium{
+    padding-right: 6rem!important;
+
+    @include respondmax(lg){
+        padding-right: 3rem!important;
+    }
+
+    @include respondmin(phone-land){
+        padding-right: 1rem!important;
+    }
+
+    @include respondmin(responsiveMax){
+        padding-right: 2.7rem!important;
+    }
+}
+
+.u-padding-top-small{
+    padding-top: 4rem!important;
+}
+
+.u-padding-top-smallest{
+    padding-top: 3.5rem!important;
+}
+
+.u-padding-bottom-medium{
+    padding-bottom: 6rem!important;
+
+    @include respondmin(phone-land){
+        padding-bottom: 2rem!important;
+    }
+}
+
+.u-padding-bottom-small{
+    padding-bottom: 3rem!important;
+
+    @include respondmax(md){
+        padding-bottom: 3rem!important;
+    }
+ 
+    @include respondmin(phone-land){
+        padding-bottom: 1.2rem!important;
+    }
+
+    @include respondmin(responsiveMin){
+        padding-bottom: 3rem!important;
+    }
+}
+
+.u-padding-bottom-smaller{
+    padding-bottom: 4.5rem!important;
+}
+
+.u-margin-top-big{
+    margin-top: 8rem!important;
+
+    @include respondmax(lg){
+        margin-top: 5rem!important;
+    }
+}
+
+.u-margin-top-biggest{
+    margin-top: 10rem!important;
+
+    @include respondmax(xl){
+        margin-top: 3rem!important;
+    }
+}
+
+.u-margin-bottom-huge{
+    margin-bottom: 15rem!important;
+
+    @include respondmax(lg){
+        margin-bottom: 8rem!important;
+    }
+}
+
+.u-margin-bottom-biggest{
+    margin-bottom: 12rem!important;
+
+    @include respondmax(md){
+        margin-bottom: 5rem!important;
+    }
+
+    @include respondmin(phone-land){
+        margin-bottom: 7rem!important;
+    }
+}
+
+.u-margin-bottom-medium{
+    margin-bottom: 6rem!important;
+}
+
+.u-margin-bottom-small{
+    margin-bottom: 4.6rem!important;
+}
+
+.u-margin-top-smallest{
+    margin-top: 1.8rem!important;
+}
+
+.u-margin-top-medium{
+    margin-top: 4.8rem!important;
+
+    @include respondmax(lg){
+        margin-top: 2.8rem!important; 
+    }
+}

@@ -1,0 +1,78 @@
+.contact{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    @include font($drpm, 1.6rem); 
+
+    @include respondmax(md){
+        flex-direction: column;
+    }
+
+    &__element{
+        width: 33.3%;
+        min-height: 31.8rem;
+        padding-top: 10.2rem;
+        text-align: center;
+        background-color: $color_primary;
+        color: $color_white;
+        transition: all .3s linear;
+
+        @include respondmin(responsiveMax){
+            min-height: 27rem;
+            padding-top: 7rem;
+        }
+
+        &--2{
+            @include respondmin(md){
+                border-left: 5px solid $color_gray-bg;
+                border-right: 5px solid $color_gray-bg;
+            }
+            
+        }
+
+        @include respondmin(xl){
+
+
+        &:hover{
+            background-color: $color_gray-bg;
+            color: $color_black;
+            i{
+                color: $color_primary;
+            }
+        }
+
+        }
+
+        @include respondmax(sm){
+            width: 100%;
+            min-height: 24rem;
+            padding-top: 6rem;
+        }
+
+        @include respondmin(phone-land){
+            min-height: 20rem;
+            padding-top: 5rem;
+        }
+
+        i{
+            font-size: 4rem;
+            display: block;
+            margin-bottom: 2.8rem;
+
+            @include respondmax(xl){
+                margin-bottom: 1.8rem;
+                font-size: 3.5rem;
+            }
+        }
+        span{
+            font-size: 1.5rem;
+            display: block;
+            font-weight: 400;
+            margin-bottom: 1.2rem;
+            @include respondmin(phone-land){
+                margin-bottom: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

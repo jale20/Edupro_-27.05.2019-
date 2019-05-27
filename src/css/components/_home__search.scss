@@ -1,0 +1,86 @@
+.search{
+    text-align: center;
+    margin-top: 2rem;
+
+    &__container{
+        width: 80%;
+        margin: auto;
+    }
+
+    &__image{
+        width: 100%;
+        img{
+            width: 91%;
+        }
+    }
+
+    &__header, &__paragraph{
+        text-transform: uppercase;
+    }
+
+    &__header{
+        letter-spacing: 2px;
+        margin-top: 2.2rem;
+        @include font($drpb, 2.4rem);
+
+        @include respondmax(lg){
+            font-size: 1.7rem;
+        }
+    }
+
+    &__paragraph{
+        letter-spacing: 1.2px;
+        margin-top: 2.1rem;
+        @include font($drp, 1.6rem);
+
+        @include respondmax(lg){
+            font-size: 1.2rem;
+        }
+    }
+
+    &__input{
+        position: relative;
+        width: 40%;
+        margin: 4.1rem auto 13.2rem;
+
+        @include respondmin(phone-land){
+            width: 70%;
+            margin: 3rem auto 4rem;
+        }
+        @include respondmax(md){
+            width: 100%;
+            margin-bottom: 6rem; 
+        }
+
+        input{
+            width: 100%;
+            padding: 1.8rem 3rem 2rem;
+            border: 1px solid $color_border;
+            @include font($drpm, 1.4rem);
+
+            @include respondmax(lg){
+                padding: 1.5rem;
+            }
+            @include respondmin(responsiveMax){
+                padding: 1.5rem 2rem;
+                font-size: 1.2rem;
+            }
+
+            &::placeholder{
+                text-transform: uppercase;
+                @include font($drpm, 1.4rem $color_text-2);
+
+                @include respondmin(responsiveMax){
+                    font-size: 1.2rem;
+                }
+            }
+        }  
+
+        i{
+            position: absolute;
+            top: 40%;
+            right: 2.5rem;
+            font-size: 1.4rem;
+        }
+    }
+}

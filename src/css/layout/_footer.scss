@@ -1,0 +1,74 @@
+.footer{
+    background-color: $color_black-2;
+
+    @include respondmax(lg){
+        text-align: center;
+    }
+
+    &__content{
+        padding: 6.6rem 0 1rem;
+    }
+
+    > *{
+        font-size: 1.4rem;
+    }
+
+    &__header{
+        margin-bottom: 3.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @include font($drpbold, $c:$color_white, $w:900);
+
+        @include respondmax(xl){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__paragraph{
+        margin-top: -.5rem;
+        line-height: 3rem;
+        @include font($drpm, $c:$color_text-3);
+
+        @include respondmax(xl){
+            line-height: 2.8rem;
+        }
+    }
+
+    &__list{
+        &-item{
+            margin-bottom: .9rem;
+            @include font($drpm, $c:$color_text-3);
+
+            @include respondmax(xl){
+                margin-bottom: .8rem;
+                
+            }
+        }
+        &-text{
+            @include font($drpm, $c:$color_text-3);
+            transition: all .3s ease;
+
+            @include respondmin(xl){
+            &:hover{
+                color: $color_white!important;
+
+                & > .footer__list-icon{
+                    padding-left: 1rem;
+                    margin-right: 0rem;
+                }
+            }
+        }
+        }
+        &-icon{
+            margin-right: 1rem;
+            transition: all .3s ease;
+        }
+    }
+
+    &__copyright{
+        background-color: $color_black-3;
+        text-align: center;
+        padding: 3.4rem 0;
+        @include font($drpbold, $c:$color_text-3, $w:500);
+    }
+}

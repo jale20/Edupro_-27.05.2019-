@@ -1,0 +1,61 @@
+.appeal{
+    background-color: $color_gray-bg;
+    &__form{
+        input, textarea, select{
+            border: 0;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            padding: 1.3rem 1.6rem;
+            @include font($apr, 1.8rem);
+            
+            &::placeholder{
+                @include font($apr, 1.8rem);
+            }
+
+            @include respondmin(ipad-pro){
+                padding: 1.4rem 2rem;
+            }
+        }
+
+        textarea{
+            @include respondmax(lg){
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    &__btn{
+        width: 100%;
+        padding: 1.1rem 3rem;
+        background-color: $color-primary;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        @include font($drpbold, 1.8rem, $color-white);
+        transition: all .3s linear;
+        @include respondmin(xl){
+        &:hover{
+            background-color: $color-white;
+            color: $color-primary;
+        }
+    }
+
+        @include respondmin(md){
+            padding: 1.2rem;
+        }
+        @include respondmax(xl){
+            padding: 1.1rem 1.2rem;
+        }
+    }
+
+    &__header{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        @include font($drpb, 1.8rem);
+
+        @include respondmax(xl){
+            margin-top: 3rem;
+        }
+    }
+}

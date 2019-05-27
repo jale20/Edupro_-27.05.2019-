@@ -1,0 +1,36 @@
+@import "abstracts/bt5start";
+  
+@import "abstracts/function";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/fonts";
+@import "base/animations";
+
+@import "components/about";
+@import "components/home__search"; 
+@import "components/courses"; 
+@import "components/owl-carousel"; 
+@import "components/preference"; 
+@import "components/commendation"; 
+@import "components/partnership"; 
+@import "components/contact"; 
+@import "components/contact__page";
+@import "components/header__primary"; 
+@import "components/appeal"; 
+@import "components/select2"; 
+@import "components/btn__effects"; 
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/contact";
+
+
+
+@import "abstracts/bt5end";
+    

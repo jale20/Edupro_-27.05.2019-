@@ -1,0 +1,22 @@
+.header--primary{
+    background-color: $color_primary;
+    text-align: center;
+    padding: 3.5rem;
+    text-transform: uppercase;
+    h1{
+        @include font($drpb, 3.6rem, $color_white);
+
+        @include respondmin(responsiveMax){
+            font-size: 2.5rem;
+        }
+        @include respondmax(sm){
+            font-size: 1.9rem;
+        }
+    }
+
+    @include respondmax(lg){
+        margin-top: 1rem;
+        padding: 2.5rem;
+        font-weight: 500;
+    }
+}

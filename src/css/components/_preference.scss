@@ -1,0 +1,25 @@
+.preference{
+    text-align: center;
+
+    &__img{
+        min-height: 7rem;
+        width: 6.8rem!important;
+        margin: auto;
+    }
+
+    &__header{
+        text-transform: uppercase;
+        margin: 2.1rem 0 2.5rem;
+        @include font($drpb, 1.8rem, $color_black, $w:700);
+
+        @include respondmin(phone-land){
+            font-size: 1.5rem;
+        }
+    }
+
+    &__paragraph{
+        text-align: justify;
+        margin-top: -1rem;
+        @include font($drp, 1.4rem);
+    }
+}

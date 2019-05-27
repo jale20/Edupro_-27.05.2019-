@@ -1,0 +1,139 @@
+.owl-carousel{
+    height: 100%;
+}
+.courses__elements{
+    .owl-dots{
+        display: block!important;
+        position: absolute;
+        bottom: -3rem;
+        left: -3.3rem;
+        background-color: $color_gray-light;
+        padding: .5rem 2.8rem .3rem;
+
+    @include respondmax(md){
+        bottom: -4rem;
+        padding: .6rem 1.6rem .6rem;
+        display: none!important;
+    }
+
+    @include respondmin(ipad){
+        bottom: -1.2rem;
+    }
+
+    @include respondmin(ipad-pro){
+        bottom: -1.2rem;
+    }
+
+    @include respondmin(responsiveMin){
+        bottom: -5rem;
+    }
+    @include respondmin(responsiveMiddle){
+        bottom: -1.2rem;
+    }
+    }
+
+    @include respondmax(md){
+        .owl-nav{
+            display: block!important;
+            button{
+                position: absolute;
+                font-size: 4rem!important;
+                top: 30%;
+                color: $color_black;
+                &:focus{
+                    color: $color_black!important;
+                    background: transparent!important;
+                }
+            }
+
+        }
+
+        .owl-prev{
+            left: -2.5rem!important;
+        }
+
+        .owl-next{
+            right: -2.5rem!important;
+        }
+    }    
+}
+
+.item{
+    width: 100%;
+}
+
+.owl-dot{
+    span{
+        background: $color_white!important;
+        width: 8px!important;
+        height: 8px!important;
+        margin: 5px 4px!important;
+    }
+
+    &.active{
+        span{
+            background: $color_primary!important;
+        }
+    }
+}
+
+.partners{
+    .owl-stage-outer{
+        padding: 1rem;
+    }
+
+    .owl-dots{
+        background-color: $color_gray-light;
+        width: 10rem;
+        margin: auto;
+    }
+
+    @include respondmin(md){
+        .owl-nav{
+            display: block!important;
+            button{
+                position: absolute;
+                font-size: 6rem!important;
+                top: 22%;
+            @include respondmin(xl){
+
+
+                &:hover{
+                    background-color: transparent!important;
+                    color: $color_primary!important;
+                }
+            }
+            }
+        }
+
+        .owl-prev{
+            left: -3.5rem;
+        }
+
+        .owl-next{
+            right: -3.5rem;
+        }
+    }    
+}
+
+.owl-2{
+    .owl-item{
+        padding-top: 9rem;
+    }
+
+}
+.owl-2, .owl-preferences{
+    .owl-nav{
+        button{
+            span{
+                font-size: 3rem;
+            }
+
+            &:hover{
+                background: transparent!important;
+                color: $color_black!important;
+                cursor: pointer;
+            }
+        }
+    }
+}

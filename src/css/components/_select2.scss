@@ -1,0 +1,28 @@
+.select2.select2-container.select2-container--default{
+    width: 100%!important;
+}
+.select2-selection__rendered{
+    padding: .8rem 3rem!important;
+}
+.select2-selection.select2-selection--single{
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+.select2-selection__placeholder{
+    font-size: 1.4rem;
+    color: $color_text-4!important;
+}
+.select2-container--default
+.select2-selection--single
+.select2-selection__arrow b {
+    top: 80%;
+    left: 30%;
+}
+
+.select2-container--focus{
+    &:focus{
+        outline: none;
+    }
+}

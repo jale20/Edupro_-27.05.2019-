@@ -1,0 +1,297 @@
+.courses{
+    &__info{
+        background-color: $color_primary;
+        color: $color_white;
+
+        &_header{
+            font-size: 2.4rem;
+            margin-bottom: 3.4rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            @include respondmin(phone-land){
+                font-size: 1.9rem;
+                margin-bottom: .5rem;
+            }
+            @include respondmax(md){
+                margin-bottom: 2rem;
+            }
+
+            @include respondmin(phone-land){
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+
+            @include respondmin(responsiveMin){
+                font-size: 2rem;
+            }
+
+            @include respondmin(responsiveMax){
+                margin-bottom: 1.7rem;
+            }
+        }
+
+        &_paragraph{
+            font-size: 1.6rem;
+            text-align: justify;
+            letter-spacing: .2px;
+
+            @include respondmin(phone-land){
+                font-size: 1.01rem;
+                margin-bottom: 0;
+            }
+
+            @include respondmin(ipad){
+                font-size: 1.2rem;
+                margin-bottom: -.1rem;
+            }
+
+            // @include respondmin(responsiveMax){
+            //     font-size: 1.4rem;
+            // }
+        }
+    }
+
+    &__icon{
+        max-height: 12rem;
+        margin: auto;
+        filter: invert(.2) sepia(1) saturate(5) hue-rotate(175deg);
+        @include respondmin(phone-land){
+            max-height: 10rem;
+            width: 100%;
+        }
+    }
+
+    &__elements{
+        background-color: $color_gray-bg;
+        height: 100%;
+    }
+
+    &__element{
+        background-color: $color_white;
+        padding: 4rem 1.3rem 3rem;
+
+        &--hover{
+            transition: all .3s linear;
+
+            @include respondmax(xl){
+
+            &:hover{
+                box-shadow: 0 .5rem 2rem $color_gray-light;
+            }
+        }
+        }
+        
+        @include respondmin(phone-land){
+            padding: 2rem 1rem;
+            min-height: 19.7rem;
+        }
+
+        @include respondmin(responsiveMax){
+            min-height: 26.6rem;
+        }
+
+        svg{
+            max-height: 11rem;
+            @include respondmin(phone-land){
+                max-height: 10rem;
+                width: 100%;
+            }
+        }
+    }
+
+    &__name{
+        text-align: center;
+        margin-top: 5.4rem;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: .8px;
+
+        a{
+            color: $color_black;
+        }
+        @include respondmin(xl){
+
+        &:hover a{
+            color: $color_primary!important;
+        }
+    }
+
+        @include respondmin(phone-land){
+            margin-top: 2.7rem;
+            font-size: .8rem;
+            font-weight: 600;
+        }
+
+        @include respondmax(md){
+            margin-top: 1.8rem;
+        }
+        @include respondmin(responsiveMax){
+            font-size: 1.2rem;
+            margin-top: 4.8rem;
+        }
+    }
+
+    &__contents{
+        margin-bottom: 7.2rem;
+    }
+
+    &__header{
+        text-align: center;
+        margin-bottom: 0rem;
+        @include font($drpb);
+
+        &--main{
+            text-transform: uppercase;
+            margin-bottom: 3.7rem;
+            font-size: 1.8rem;
+        }
+
+        &--3{
+            margin-top: 1.8rem;
+            margin-bottom: .1rem;
+        }
+    }
+
+    &__paragraph{
+        text-align: justify;
+        font-size: 1.5rem;
+        margin-bottom: 1.6rem;
+        line-height: 2rem;
+        font-weight: 500;
+
+        @include font($drp);
+    }
+}
+
+.course{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: $color_white; 
+
+    @include respondmax(md){
+        flex-direction: column;
+    }
+
+    &__svg{
+        filter: invert(1);
+    }
+    
+    &__logo{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        @include respondmax(md){
+            width: 100%;
+        }
+    }
+
+    &__icon{
+        width: 11.6rem;
+        display: inline-block;
+
+        @include respondmax(lg){
+            width: 10rem;
+        }
+    }
+
+    &__name{
+        display: inline-block;
+        text-transform: none;
+        margin-left: .5rem;
+        text-align: left!important;
+
+        &--main{
+            display: block;
+            @include font($drpbold, 2.4rem);
+
+            @include respondmax(xl){
+                font-size: 2rem;
+            }
+
+            @include respondmin(ipad-pro){
+                font-size: 1.6rem;
+            }
+        }
+        &--sub{
+            font-weight: normal;
+            @include font($drp, 1.6rem);
+
+            @include respondmin(ipad-pro){
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__times{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.4rem;
+
+        @include respondmax(md){
+            width: 100%;
+            margin: 3rem 0;
+        }
+    }
+
+    &__time{
+        font-size: 1.4rem;
+
+        @include respondmax(sm){
+            font-size: 1.1rem;
+        }
+
+        @include respondmin(phone-land){
+            font-size: 1.2rem;
+        }
+
+        &--sub{
+            font-weight: normal;
+            display: block;
+            margin-bottom: .8rem;
+            margin-top: .8rem;
+
+            @include respondmax(sm){
+                margin-bottom: 1rem;
+            }
+        }
+
+        &--main{
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+    }
+
+    &__catalog{
+        width: 20%;
+        align-self: center;
+
+        @include respondmax(md){
+            width: 100%;
+        }        
+
+        &--link{
+            border: 2px solid $color_white;
+            padding: 1.2rem 4rem;
+            border-radius: 2rem;
+            @include font($drpb, 1.4rem, $color_white);
+
+            @include respondmax(lg){
+                padding: 1rem 3rem; 
+            }
+
+            @include respondmin(ipad-pro){
+                padding: 1rem 2rem;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
