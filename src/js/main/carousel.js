@@ -34,11 +34,11 @@ $( document ).ready(function() {
     });
 
     $('.owl-2 .owl-carousel').owlCarousel({
-      autoplay: ($('.owl-2 .item').length >= 2),
-      mouseDrag: ($('.owl-2 .item').length >= 2),
-      loop:($('.owl-2 .item').length >= 2),
+      autoplay: ($('.owl-2 .item').length > 2),
+      mouseDrag: ($('.owl-2 .item').length > 2),
+      loop:($('.owl-2 .item').length > 2),
       margin:0,
-      nav: ($('.owl-2 .item').length >= 2),
+      nav: ($('.owl-2 .item').length > 2),
       dots: false,
       responsive:{
         0:{
