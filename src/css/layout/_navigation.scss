@@ -88,10 +88,11 @@
         @include font($drpb, 1.4rem, $color_white, $w:700);
         transition: all .3s linear;
         @include respondmin(xl){
-
-        &:hover{
-            color: $color_white;
-        }
+            &:hover{
+                color: $color_white;
+                transform: translateY(-3px);
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);  
+            }
     }
         @include respondmax(lg){
             font-size: 1rem;
